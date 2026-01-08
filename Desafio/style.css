@@ -1,4 +1,4 @@
-/* Reset básico */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -30,7 +30,7 @@ footer{
 }
 
 #search-btn img {
-    width: 20px; /* Ajuste o tamanho conforme necessário */
+    width: 20px; 
     height: 20px;
 }
 
@@ -45,10 +45,10 @@ input {
     font-size: 16px;
 }
 
-/* Grid Layout para as fotos [cite: 17] */
+/* Grid Layout para as fotos */
 #gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsivo [cite: 55] */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsivo  */
     gap: 20px;
     width: 90%;
     max-width: 1200px;
@@ -61,10 +61,10 @@ input {
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
-    transition: transform 0.3s ease; /* Suavização do efeito */
+    transition: transform 0.3s ease; 
 }
 
-/* Efeito visual ao passar o mouse (Requisito: aumento de escala ou sombra) [cite: 18] */
+
 .photo-card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -76,22 +76,22 @@ input {
     object-fit: cover;
 }
 
-/* Nome da foto centralizado abaixo da imagem [cite: 15] */
+
 .photo-card h3 {
     font-size: 1rem;
     margin: 10px 0;
 }
 
-/* O fundo escuro (Overlay) */
+
 .modal {
-    display: none; /* Começa escondido */
+    display: none; 
     position: fixed; 
-    z-index: 1000; /* Fica em cima de tudo */
+    z-index: 1000; 
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Fundo preto quase transparente */
+    background-color: rgba(0, 0, 0, 0.9); 
 }
 
 /* A imagem dentro do modal */
@@ -99,14 +99,14 @@ input {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px; /* Limita o tamanho para não estourar telas grandes */
-    max-height: 80vh; /* Não deixa passar da altura da tela */
+    max-width: 700px; 
+    max-height: 80vh; 
     margin-top: 5%;
     border-radius: 5px;
-    animation: zoom 0.3s; /* Um efeitinho de zoom ao abrir */
+    animation: zoom 0.3s; 
 }
 
-/* Legenda da foto (Opcional) */
+
 #modal-caption {
     margin: auto;
     display: block;
@@ -117,7 +117,7 @@ input {
     font-size: 20px;
 }
 
-/* Botão de fechar (X) */
+
 .close-btn {
     position: absolute;
     top: 15px;
@@ -132,8 +132,9 @@ input {
     color: #bbb;
 }
 
-/* Animação de zoom */
+
 @keyframes zoom {
     from {transform:scale(0)} 
     to {transform:scale(1)}
+
 }
