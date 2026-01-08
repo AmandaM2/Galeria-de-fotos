@@ -16,12 +16,12 @@ const galleryGrid = document.getElementById('gallery-grid');
 const searchInput = document.getElementById('search-input');
 const noResultsMsg = document.getElementById('no-results');
 
-// 2. Função para renderizar as fotos na tela
+
 function renderGallery(items) {
-    galleryGrid.innerHTML = ''; // Limpa a galeria atual
+    galleryGrid.innerHTML = ''; 
 
     if (items.length === 0) {
-        noResultsMsg.style.display = 'block'; // Mostra mensagem se vazio [cite: 44]
+        noResultsMsg.style.display = 'block'; 
     } else {
         noResultsMsg.style.display = 'none';
         
@@ -29,7 +29,7 @@ function renderGallery(items) {
     const card = document.createElement('div');
     card.className = 'photo-card';
     
-    // Adicionamos o "onclick" na imagem para chamar a função de abrir
+    
     card.innerHTML = `
         <img src="${photo.src}" alt="${photo.name}" onclick="openModal('${photo.src}', '${photo.name}')">
         <h3>${photo.name}</h3>
@@ -39,14 +39,14 @@ function renderGallery(items) {
     }
 }
 
-// 3. Renderização inicial
+
 renderGallery(photos);
 
-// 4. Lógica de Busca em Tempo Real [cite: 24, 43]
+
 searchInput.addEventListener('input', (e) => {
     const searchTerm = e.target.value.toLowerCase();
     
-    // Filtra considerando apenas o nome da foto [cite: 25]
+    
     const filteredPhotos = photos.filter(photo => 
         photo.name.toLowerCase().includes(searchTerm)
     );
@@ -58,21 +58,22 @@ const modalImg = document.getElementById("modal-img");
 const captionText = document.getElementById("modal-caption");
 const closeBtn = document.getElementsByClassName("close-btn")[0];
 
-// Função que abre o modal (chamada ao clicar na foto)
+
 function openModal(src, name) {
     modal.style.display = "block";
     modalImg.src = src;
     captionText.innerHTML = name;
 }
 
-// Quando clicar no X, fecha o modal
+
 closeBtn.onclick = function() {
     modal.style.display = "none";
 }
 
-// (Opcional) Fechar se clicar fora da imagem
+
 modal.onclick = function(event) {
     if (event.target === modal) {
         modal.style.display = "none";
     }
+
 }
