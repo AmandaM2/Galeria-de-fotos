@@ -29,7 +29,7 @@ Você precisa apenas de um navegador web moderno (Google Chrome, Firefox, Edge, 
 
 1.  **Clone o repositório** (ou baixe o arquivo ZIP):
     ```bash
-    git clone [https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git](https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git)
+    git clone https://github.com/AmandaM2/Galeria-de-fotos.git
     ```
 
 2.  **Acesse a pasta do projeto:**
