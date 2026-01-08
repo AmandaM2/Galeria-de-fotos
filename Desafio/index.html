@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Galeria de Fotos</h1>
+    </header>
+
+    <section id="search-container">
+        <input type="text" id="search-input" placeholder="Pesquise pelo nome da foto">
+        <button id="search-btn">
+            <img src="./img/lupa1.png" alt="Pesquisar">
+        </button>    
+    </section>
+
+    <main id="gallery-grid">
+        </main>
+
+    <p id="no-results" style="display: none; text-align: center;">Nenhuma foto encontrada</p>
+
+    <footer>
+        <p>&copy; 2026 Galeria de Fotos. Desenvolvido por <strong>Amanda Moura</strong>.</p>
+    </footer>
+
+    <div id="image-modal" class="modal">
+    <span class="close-btn">&times;</span>
+    <img class="modal-content" id="modal-img">
+    <div id="modal-caption"></div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
